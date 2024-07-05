@@ -14,10 +14,3 @@ resource "digitalocean_vpc_peering" "Peer" {
     data.digitalocean_vpc.vpc2.id
   ]
 }
-output "vpc1" {
-  value = data.digitalocean_vpc.vpc1.id
-}
-
-output "vpc2" {
-  value = data.digitalocean_vpc.vpc2.id
-}
